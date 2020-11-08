@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "**/elm-stuff": true,
+    "**/node_modules": true,
+    "**/.cache": true,
+    "**/dist": true,
+    "**/.DS_Store": true
+  }
+}
