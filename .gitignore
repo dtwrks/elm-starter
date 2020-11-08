@@ -1,0 +1,8 @@
+# Package Managers & Cache
+elm-stuff
+node_modules
+.cache
+dist
+
+# MacOS weird stuff
+.DS_Store
