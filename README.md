@@ -4,4 +4,5 @@ Use this starter to create a single page application based on:
 
 - Elm
 - Tailwindcss
-- Typescript
+- Typescript Interop
+- Custom Elements
