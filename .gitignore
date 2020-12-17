@@ -6,3 +6,6 @@ dist
 
 # MacOS weird stuff
 .DS_Store
+
+# Tailwind Generated CSS
+./src/css/index.g.css
