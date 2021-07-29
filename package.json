@@ -1,36 +1,24 @@
 {
   "name": "dtwrks-elm-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A good starting point for elm-based apps",
   "author": "Georges Boris",
-  "scripts": {
-    "start": "run-p interop:watch start:parcel start:tailwind",
-    "start:parcel": "parcel ./src/index.html -p 3000",
-    "interop": "elm-typescript-interop",
-    "interop:watch": "chokidar src/elm/Ports.elm -c \"npm run interop\"",
-    "start:tailwind": "postcss src/css/index.css --o src/css/index.g.css --watch",
-    "build": "run-s interop build:tailwind build:parcel",
-    "build:parcel": "parcel build ./src/index.html",
-    "build:tailwind": "NODE_ENV=production postcss src/css/index.css --o src/css/index.g.css"
-  },
   "license": "ISC",
-  "devDependencies": {
-    "chokidar-cli": "2.1.0",
-    "elm": "^0.19.1-3",
-    "elm-hot": "^1.1.5",
-    "elm-typescript-interop": "0.0.17",
-    "node-elm-compiler": "^5.0.5",
-    "npm-run-all": "4.1.5",
-    "parcel-bundler": "^1.12.4",
-    "postcss": "^8.1.6",
-    "postcss-clean": "^1.1.0",
-    "postcss-cli": "^8.2.0",
-    "postcss-modules": "^3.2.2",
-    "tailwindcss": "^1.8.10",
-    "typescript": "^4.0.5"
+  "scripts": {
+    "postinstall": "elm-tooling install",
+    "start": "vite",
+    "start:docs": "vite --mode docs",
+    "build": "vite build",
+    "build:docs": "vite build --mode docs"
   },
-  "dependencies": {},
-  "browserslist": [
-    "last 1 chrome versions"
-  ]
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.14",
+    "@tsconfig/svelte": "^2.0.1",
+    "elm-tooling": "^1.0.2",
+    "tailwindcss": "^2.1.1",
+    "typescript": "^4.3.2",
+    "vite": "^2.4.1",
+    "vite-plugin-elm": "^2.4.1"
+  },
+  "dependencies": {}
 }
